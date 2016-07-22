@@ -1,8 +1,14 @@
 $(document).ready(start);
 
 function start() {
-  $("a").click(overrideLinks);
+  $("a .viewMore").click(overrideLinks);
   $("#viewMore").click(showContent);
+  $(".mobile-nav a").click(menuDropDown);
+
+}
+
+function menuDropDown() {
+  $(".dropdown-menu").slideDown();
 }
 
 function showContent() {

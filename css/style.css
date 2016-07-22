@@ -6,6 +6,31 @@ body {
     background: #efefef;
 }
 
+/* DROPDOWN MENU  */
+
+.dropdown-menu {
+  display: none;
+    background: #383838;
+    padding: 20px 6%;
+}
+
+.dropdown-menu ul {
+  justify-content: space-between;
+}
+
+.dropdown-menu li {
+    margin-left: 0px;
+}
+
+.dropdown-menu li a {
+    color: #ababab;
+}
+
+.dropdown-menu li a:hover {
+    transition: ease 0.3s;
+    color: #fff;
+}
+
 /* NAV */
 
 header {
@@ -42,13 +67,17 @@ li {
     margin-left: 42px;
 }
 
+nav li a {
+    color: #adadad;
+}
+
 li a {
     color: #383838;
 }
 
 li a:hover {
     transition: ease 0.3s;
-    color: #adadad;
+    color: #383838;
 }
 
 a .fa {
@@ -60,6 +89,10 @@ a .fa {
     font-size: 18px;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 /* INTRODUCTION TEXT */
 
 .introduction {
@@ -68,9 +101,10 @@ a .fa {
 }
 
 .introduction h3 {
-    font-weight: 100;
+    font-weight: 300;
     font-size: 1.4rem;
     margin-bottom: 44px;
+    color: #636363;
 }
 
 /* HOMEPAGE GRID CONTENT */
@@ -107,6 +141,7 @@ a .fa {
     opacity: 1;
     padding: 10%;
     z-index: 1;
+    width: initial;
 }
 
 .project-name h3 {
@@ -178,7 +213,7 @@ footer {
 }
 
 a.email {
-    font-weight: 400;
+    font-weight: 300;
     font-family: 'Roboto';
     color: #909090;
 }
@@ -206,6 +241,90 @@ a.email:hover {
 
 span.light {
     font-weight: 100;
+}
+
+/* CONTACT PAGE CSS */
+
+.contact {
+    padding: 0px 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details {
+    width: 74%;
+}
+
+.details h3 {
+    font-weight: 400;
+    color: #383838;
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+}
+
+.details p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+.contact-links {
+    width: 20%;
+}
+
+.contact-links ul {
+    display: block;
+    margin-top: 40px;
+    border-left: 1px solid #cccccc;
+    padding-left: 50px;
+}
+
+.contact-links li {
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.contact-links a:hover {
+    color: #adadad;
+}
+
+/* RESPONSIVE CSS  */
+
+@media screen and (max-width: 880px){
+
+.examples {
+    display: block;
+    padding: 0 6%;
+    justify-content: space-between;
+}
+
+.project-box {
+    width: 100%;
+    position: relative;
+    margin-bottom: 6%;
+}
+
+.mobile-nav {
+    display: block;
+}
+
+.mobile-nav i {
+    font-size: 1.2rem;
+    color: #383838;
+}
+
+nav {
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 640px){
+
+.introduction {
+  display: none;
+}
+
 }
 
 /* UN-USED CSS  */
