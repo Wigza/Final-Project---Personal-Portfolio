@@ -7,11 +7,19 @@ body {
 }
 
 /* DROPDOWN MENU  */
+.dropdown-menu-wrap{
+  transition: all .3s;
+  overflow: hidden;
+  height: 0;
 
+}
 .dropdown-menu {
-  display: none;
     background: #383838;
     padding: 20px 6%;
+
+}
+.dropdown-menu-wrap.is-shown{
+  height: 58px;
 }
 
 .dropdown-menu ul {
@@ -119,6 +127,7 @@ a .fa {
     display: none;
     padding: 0 6%;
     margin-top: 1%;
+    justify-content: space-between;
 }
 
 /*#show {
@@ -284,8 +293,69 @@ span.light {
     margin-bottom: 10px;
 }
 
-.contact-links a:hover {
+.contact-links li a {
     color: #adadad;
+}
+
+.contact-links a:hover {
+    color: #383838;
+}
+
+/* PROJECT LANDING PAGE'S CSS */
+
+.description h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.description h4 {
+    color: #8a8a8a;
+    font-weight: 300;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #b9b9b9;
+}
+
+.description p {
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.4rem;
+    margin-top: 10px;
+}
+
+.Project-page {
+    padding: 0px;
+    margin-left: 6%;
+    margin-right: 6%;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.project-images {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 6%;
+}
+
+.project-images img {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.below-images {
+    width: 100%;
+    padding: 0 6%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.third {
+    width: 30%;
+}
+
+.third img {
+    width: 100%;
 }
 
 /* RESPONSIVE CSS  */

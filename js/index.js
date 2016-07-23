@@ -8,11 +8,13 @@ function start() {
 }
 
 function menuDropDown() {
-  $(".dropdown-menu").slideDown();
+  $(".dropdown-menu-wrap").toggleClass('is-shown');
 }
 
 function showContent() {
   $(".examples-overflow").slideDown();
+  $(".examples-overflow").css('display','flex');
+  $("#viewMore").css('display', 'none');
 }
 
 function overrideLinks(event) {
