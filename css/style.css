@@ -130,6 +130,17 @@ a .fa {
     justify-content: space-between;
 }
 
+.show-content {
+    display: none;
+    padding: 0 6%;
+    margin-top: 1%;
+    justify-content: space-between;
+}
+
+.active {
+  display: block;
+}
+
 /*#show {
     display: flex;
     justify-content: space-between;
@@ -197,14 +208,15 @@ a .fa {
 }
 
 .view-more a {
-    color: #383838;
+    color: #8a8a8a;
     transition: ease;
+    cursor: pointer;
 }
 
 .view-more a:hover {
-    border-bottom: 2px solid #8a8a8a;
+    border-bottom: 2px solid #383838;
     padding-bottom: 3px;
-    color: #8a8a8a;
+    color: #383838;
     margin-bottom: -5px;
 }
 
@@ -323,6 +335,13 @@ span.light {
     margin-top: 10px;
 }
 
+p.foot-note {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 0.8rem;
+    color: #ababab;
+}
+
 .Project-page {
     padding: 0px;
     margin-left: 6%;
@@ -383,8 +402,40 @@ span.light {
     color: #383838;
 }
 
+.mobile-nav i:hover {
+    color: #adadad;
+    transition: ease 0.3s;
+}
+
 nav {
     display: none;
+}
+
+.acitve {
+  display: block;
+}
+
+/* Contact - About Page CSS  */
+
+.contact {
+    padding: 0px 6%;
+    display: block;
+    justify-content: space-between;
+}
+
+.details {
+    width: 100%;
+}
+
+.contact-links {
+    width: 100%;
+}
+
+.contact-links ul {
+    display: block;
+    margin-top: 40px;
+    border: none;
+    padding-left: 0px;
 }
 
 }

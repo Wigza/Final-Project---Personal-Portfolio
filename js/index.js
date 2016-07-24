@@ -17,6 +17,12 @@ function showContent() {
   $("#viewMore").css('display', 'none');
 }
 
+$(window).resize(function(){
+	if ($(window).width() <= 880){
+		$(".examples-overflow").addClass('active')
+	}
+});
+
 function overrideLinks(event) {
   console.log(event)
   event.preventDefault()
