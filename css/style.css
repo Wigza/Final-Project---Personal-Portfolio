@@ -55,11 +55,19 @@ header {
     font-weight: 500;
     font-size: 1.6rem;
     color: #383838;
+    display: flex;
+    align-items: center;
+
 }
 
 .logo:hover {
     transition: ease 0.3s;
-    color: #adadad;
+    opacity: 0.5;
+}
+
+.logo img {
+    height: 2rem;
+    padding-right: 10px;
 }
 
 a {
@@ -367,6 +375,23 @@ p.foot-note {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
+}
+
+.two-column-images {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.half {
+  width: 48%;
+  margin-bottom: 4%;
+}
+
+.half img {
+  width: 100%;
 }
 
 .third {
