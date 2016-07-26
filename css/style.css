@@ -145,10 +145,6 @@ a .fa {
     justify-content: space-between;
 }
 
-.active {
-  display: block;
-}
-
 /*#show {
     display: flex;
     justify-content: space-between;
@@ -404,7 +400,17 @@ p.foot-note {
 
 /* RESPONSIVE CSS  */
 
+@media screen and (min-width: 881px) {
+  .examples-overflow.active {
+      display: flex;
+  }
+}
+
 @media screen and (max-width: 880px){
+
+.examples-overflow.active {
+    display: block;
+}
 
 .examples {
     display: block;

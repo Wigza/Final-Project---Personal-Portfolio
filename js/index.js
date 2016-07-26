@@ -12,16 +12,9 @@ function menuDropDown() {
 }
 
 function showContent() {
-  $(".examples-overflow").slideDown();
-  $(".examples-overflow").css('display','flex');
   $("#viewMore").css('display', 'none');
+  $(".examples-overflow").addClass('active');
 }
-
-$(window).resize(function(){
-	if ($(window).width() <= 880){
-		$(".examples-overflow").addClass('active')
-	}
-});
 
 function overrideLinks(event) {
   console.log(event)
