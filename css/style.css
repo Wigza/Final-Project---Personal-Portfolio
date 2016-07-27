@@ -132,11 +132,16 @@ a .fa {
 }
 
 .examples-overflow {
-    display: none;
+    display: block;
+    overflow: hidden;
     padding: 0 6%;
     margin-top: 1%;
     justify-content: space-between;
+    height: 0px;
+    transition: 0.3s;
 }
+
+
 
 .show-content {
     display: none;
@@ -390,6 +395,15 @@ p.foot-note {
   width: 100%;
 }
 
+.half p {
+    font-size: 1rem;
+    color: #949494;
+    font-weight: 300;
+    border-bottom: 1px solid #949494;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
 .third {
     width: 30%;
 }
@@ -403,13 +417,19 @@ p.foot-note {
 @media screen and (min-width: 881px) {
   .examples-overflow.active {
       display: flex;
+      height: auto;
   }
+  .dropdown-menu-wrap{
+      display: none;
+  }
+
 }
 
 @media screen and (max-width: 880px){
 
 .examples-overflow.active {
     display: block;
+    height: auto;
 }
 
 .examples {
@@ -426,6 +446,7 @@ p.foot-note {
 
 .mobile-nav {
     display: block;
+    margin-top: 4px;
 }
 
 .mobile-nav i {
