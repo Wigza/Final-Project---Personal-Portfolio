@@ -467,6 +467,22 @@ nav {
   display: block;
 }
 
+.two-column-images {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 6%;
+    display: block;
+}
+
+.half {
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+.half p {
+  margin-bottom: 8%;
+}
+
 /* Contact - About Page CSS  */
 
 .contact {
