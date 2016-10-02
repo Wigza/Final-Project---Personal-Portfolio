@@ -218,7 +218,7 @@ a .fa {
 
 .view-more a {
     color: #8a8a8a;
-    transition: ease;
+    transition: ease 0.3s;
     cursor: pointer;
 }
 
