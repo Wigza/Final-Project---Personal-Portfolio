@@ -116,11 +116,40 @@ a .fa {
   margin-bottom: -5px;
 }
 
-.introduction h3 {
+.typed-text {
+  display: inline-block;
     font-weight: 300;
     font-size: 1.4rem;
     margin-bottom: 44px;
     color: #636363;
+}
+
+
+/* BLINKING CURSOR */
+
+.typed-cursor{
+    font-family: 'Roboto';
+    font-size: 24px;
+    color: #636363;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
 
 /* HOMEPAGE GRID CONTENT */
@@ -218,7 +247,7 @@ a .fa {
 
 .view-more a {
     color: #8a8a8a;
-    transition: ease 0.3s;
+    transition: ease;
     cursor: pointer;
 }
 
@@ -427,131 +456,89 @@ p.foot-note {
 
 @media screen and (max-width: 880px){
 
-.examples-overflow.active {
+  .examples-overflow.active {
+      display: block;
+      height: auto;
+  }
+
+  .examples {
+      display: block;
+      padding: 0 6%;
+      justify-content: space-between;
+  }
+
+  .project-box {
+      width: 100%;
+      position: relative;
+      margin-bottom: 6%;
+  }
+
+  .mobile-nav {
+      display: block;
+      margin-top: 4px;
+  }
+
+  .mobile-nav i {
+      font-size: 1.2rem;
+      color: #383838;
+  }
+
+  .mobile-nav i:hover {
+      color: #adadad;
+      transition: ease 0.3s;
+  }
+
+  nav {
+      display: none;
+  }
+
+  .acitve {
     display: block;
-    height: auto;
-}
+  }
 
-.examples {
-    display: block;
-    padding: 0 6%;
-    justify-content: space-between;
-}
+  .two-column-images {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 6%;
+      display: block;
+  }
 
-.project-box {
-    width: 100%;
-    position: relative;
-    margin-bottom: 6%;
-}
+  .half {
+      width: 100%;
+      margin-bottom: 4%;
+  }
 
-.mobile-nav {
-    display: block;
-    margin-top: 4px;
-}
+  .half p {
+    margin-bottom: 8%;
+  }
 
-.mobile-nav i {
-    font-size: 1.2rem;
-    color: #383838;
-}
+  /* Contact - About Page CSS  */
 
-.mobile-nav i:hover {
-    color: #adadad;
-    transition: ease 0.3s;
-}
+  .contact {
+      padding: 0px 6%;
+      display: block;
+      justify-content: space-between;
+  }
 
-nav {
-    display: none;
-}
+  .details {
+      width: 100%;
+  }
 
-.acitve {
-  display: block;
-}
+  .contact-links {
+      width: 100%;
+  }
 
-.two-column-images {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 6%;
-    display: block;
-}
-
-.half {
-    width: 100%;
-    margin-bottom: 4%;
-}
-
-.half p {
-  margin-bottom: 8%;
-}
-
-/* Contact - About Page CSS  */
-
-.contact {
-    padding: 0px 6%;
-    display: block;
-    justify-content: space-between;
-}
-
-.details {
-    width: 100%;
-}
-
-.contact-links {
-    width: 100%;
-}
-
-.contact-links ul {
-    display: block;
-    margin-top: 40px;
-    border: none;
-    padding-left: 0px;
-}
-
+  .contact-links ul {
+      display: block;
+      margin-top: 40px;
+      border: none;
+      padding-left: 0px;
+  }
 }
 
 @media screen and (max-width: 640px){
 
-.introduction {
-  display: none;
+  .introduction {
+    display: none;
+  }
 }
-
-}
-
-/* UN-USED CSS  */
-
-/*.box {
-    width: 33%;
-    background: #d4d4d4;
-    height: 250px;
-    margin-right: 20px;
-}
-
-.box:hover figcaption {
-    transition: .8s linear;
-    opacity: 1;
-    width: 100%;
-    text-align: center;
-    font-weight: 100;
-    background: #0088ff;
-    color: white;
-    padding: 109px 0px;
-    z-index: 1000;
-    margin-top: -204px;
-    position: absolute;
-}
-
-figure.img-hvr {
-    position: relative;
-}
-
-.img-hvr img {
-    width: 100%;
-}
-
-figcaption {
-    opacity: 0;
-    transition: .8s linear;
-}
-
-.box:last-child {
-    margin-right: 0px;
-}*/
