@@ -1,28 +1,25 @@
 $(document).ready(start);
 
 function start() {
-  $("a .viewMore").click(overrideLinks);
   $("#viewMore").click(showContent);
-  $(".mobile-nav a").click(menuDropDown);
+  $(".mobile-nav").click(menuDropDown);
+  typedText();
 }
 
-$(function(){
-    $(".typed-text").typed({
-        strings: ["Hi I'm Tim Phillips, I'm a Graphic designer. Below is a selction of my work. "],
-        typeSpeed: 0
-    });
-});
+function typedText() {
+  $(".typed-text").typed({
+      strings: ["<strong>Graphic Designer.</strong>", "^500<strong>Web Designer.</strong>", "^500<strong>Web Developer.</strong>"],
+      typeSpeed: 30
+  });
+}
 
-function menuDropDown() {
+function menuDropDown(event) {
+  event.preventDefault();
   $(".dropdown-menu-wrap").toggleClass('is-shown');
 }
 
-function showContent() {
+function showContent(event) {
+  event.preventDefault();
   $("#viewMore").css('display', 'none');
   $(".examples-overflow").addClass('active');
-}
-
-function overrideLinks(event) {
-  console.log(event)
-  event.preventDefault()
 }
