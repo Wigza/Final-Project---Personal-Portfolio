@@ -3,7 +3,19 @@ $(document).ready(start);
 function start() {
   $("#viewMore").click(showContent);
   $(".mobile-nav").click(menuDropDown);
+  $('.project-box').mousedown(buttonRipple);
   typedText();
+}
+
+function buttonRipple(e) {
+  var ripple = $(this).find(".ripple");
+  ripple.removeClass("animate");
+  var x = parseInt(e.pageX - $(this).offset().left) - (ripple.width() / 2);
+  var y = parseInt(e.pageY - $(this).offset().top) - (ripple.height() / 2);
+  ripple.css({
+     top: y,
+     left: x
+  }).addClass("animate");
 }
 
 function typedText() {
